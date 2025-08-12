@@ -27,7 +27,7 @@ export default defineConfig({
       },
     },
   },
-  base: process.env.NODE_ENV === 'production' ? '/portfolio-react/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/My-Web/' : '/',
   define: {
     'process.env': {},
     global: 'globalThis',
