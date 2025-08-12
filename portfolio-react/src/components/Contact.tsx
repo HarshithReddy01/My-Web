@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="contact">
       <div className="video-background">
         <video autoPlay muted loop playsInline>
-          <source src="/Images/Motion Animation.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}Images/Motion Animation.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

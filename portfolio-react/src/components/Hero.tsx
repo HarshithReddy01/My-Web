@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
     <section id="home" className="hero">
       <div className="hero-video-background">
         <video autoPlay muted loop playsInline>
-          <source src="/Images/Motion Animation.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}Images/Motion Animation.mp4`} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="video-overlay"></div>
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="hero-image">
           <div className="image-wrapper">
-            <img src="/Images/Website.png" alt="Harshith Reddy" className="profile-img" />
+            <img src={`${import.meta.env.BASE_URL}Images/Website.png`} alt="Harshith Reddy" className="profile-img" />
           </div>
         </div>
       </div>
