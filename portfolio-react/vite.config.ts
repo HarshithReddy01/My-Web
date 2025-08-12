@@ -27,7 +27,7 @@ export default defineConfig({
       },
     },
   },
-  base: '/',
+  base: process.env.NODE_ENV === 'production' ? '/My-Web/' : '/',
   define: {
     'process.env': {},
     global: 'globalThis',
