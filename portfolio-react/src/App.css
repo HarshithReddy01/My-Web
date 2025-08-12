@@ -1225,7 +1225,13 @@ body {
     }
     
     .skills-container {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .skills-frontend, .skills-backend {
+        flex: 1;
+        min-width: 0;
     }
     
     .projects-grid {
@@ -1424,13 +1430,14 @@ body {
     
     /* Skills Section Mobile Fixes */
     .skills-container {
-        flex-direction: column;
-        gap: 20px;
+        flex-direction: row;
+        gap: 15px;
     }
     
     .skills-frontend, .skills-backend {
-        min-width: auto;
-        padding: 20px;
+        flex: 1;
+        min-width: 0;
+        padding: 15px;
     }
     
     /* Contact Section Mobile Fixes */
