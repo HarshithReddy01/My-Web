@@ -21,7 +21,7 @@ I'm Harshith Reddy, a passionate developer who loves creating innovative solutio
 - **Styling**: CSS3 with modern design principles
 - **Icons**: FontAwesome for beautiful iconography
 - **Routing**: React Router for seamless navigation
-- **Development**: Create React App for streamlined development
+- **Build Tool**: Vite for fast development and optimized builds
 
 ## Project Structure
 
@@ -33,6 +33,8 @@ portfolio-react/
 │   ├── App.tsx        # Main application component
 │   └── index.tsx      # Application entry point
 ├── public/            # Static assets and images
+├── index.html         # Main HTML template
+├── vite.config.ts     # Vite configuration
 └── package.json       # Project dependencies and scripts
 ```
 
@@ -53,18 +55,26 @@ To run this project locally:
 
 3. **Start the development server**
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. **Open your browser**
    Navigate to `http://localhost:3000` to view the portfolio
 
+### Why Vite?
+This project has been migrated from Create React App to Vite for:
+- ⚡ **Faster development server startup**
+- 🔥 **Instant Hot Module Replacement (HMR)**
+- 🚀 **Optimized production builds**
+- 🎯 **Better TypeScript support**
+- 📦 **Modern build tooling**
+
 ## Available Scripts
 
-- `npm start` - Runs the app in development mode
+- `npm run dev` - Runs the app in development mode with Vite (fast hot reload)
 - `npm run build` - Builds the app for production
+- `npm run preview` - Preview the production build locally
 - `npm test` - Launches the test runner
-- `npm run eject` - Ejects from Create React App (not recommended)
 
 ## Sections
 
@@ -94,11 +104,14 @@ This portfolio is designed to be easily customizable. You can:
 ## Deployment
 
 The portfolio is ready for deployment on various platforms:
-- Netlify
-- Vercel
-- GitHub Pages
-- AWS S3
-- Any static hosting service
+- **GitHub Pages** - Configured with GitHub Actions workflow
+- **Netlify** - Drag and drop the `dist` folder
+- **Vercel** - Connect your repository for automatic deployments
+- **AWS S3** - Upload the `dist` folder contents
+- **Any static hosting service** - The built files are in the `dist` directory
+
+### GitHub Pages Deployment
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically builds and deploys to GitHub Pages when you push to the main branch.
 
 ## Contributing
 
