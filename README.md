@@ -4,7 +4,9 @@ Welcome to my personal portfolio website! This is a modern, responsive React app
 
 ## About Me
 
-I'm Harshith Reddy, a passionate developer who loves creating innovative solutions and building beautiful user experiences. This portfolio represents my journey in web development and showcases the projects I've worked on.
+AI Engineer & Full-Stack Developer | Spring Boot & React
+
+I'm a BS Computer Science student at the University of South Dakota, specializing in Artificial Intelligence, and a research assistant under Dr. Debesh Jha, Assistant Professor at USD. I turn ideas into smart, powerful web apps that are easy and enjoyable to use. By blending AI models with strong backends and clean, responsive designs, I build products that solve real problems.
 
 ## Features
 
