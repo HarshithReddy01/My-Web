@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
       title: "Weather Dashboard",
       description: "Real-time weather application with 5-day forecast and location-based services.",
       image: `${import.meta.env.BASE_URL}Images/Weather.png`,
-      liveLink: "#",
+      liveLink: "https://harshithreddy01.github.io/PM-Accelerator--Test-1/",
       githubLink: "https://github.com/HarshithReddy01/WeatherApplication",
       tech: ["React", "Java", "API"]
     }
