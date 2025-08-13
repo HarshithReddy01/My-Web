@@ -61,13 +61,6 @@ To run this project locally:
 4. **Open your browser**
    Navigate to `http://localhost:3000` to view the portfolio
 
-### Why Vite?
-This project has been migrated from Create React App to Vite for:
-- ⚡ **Faster development server startup**
-- 🔥 **Instant Hot Module Replacement (HMR)**
-- 🚀 **Optimized production builds**
-- 🎯 **Better TypeScript support**
-- 📦 **Modern build tooling**
 
 ## Available Scripts
 
