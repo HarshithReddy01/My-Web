@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
       </div>
       <div className="container">
         <div className="hero-content">
-          <h1 className="hero-title">Hi, I'm <span>Harshith Reddy</span> <span className="wave-emoji">👋</span></h1>
+          <h1 className="hero-title">Hi, I'm <span>Harshith Reddy Nalla</span> <span className="wave-emoji">👋</span></h1>
           <h2 className="hero-subtitle">AI Engineer & Full-Stack Developer</h2>
           <p className="hero-description">
             I love turning ideas into intelligent, scalable web apps that feel as good to use as they are powerful under the hood. 

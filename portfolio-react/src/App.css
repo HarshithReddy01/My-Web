@@ -29,9 +29,11 @@ body {
     overflow-x: hidden;
     line-height: 1.6;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
 }
 
-/* Parallax Background */
+
 .parallax-bg {
     position: fixed;
     top: 0;
@@ -41,9 +43,9 @@ body {
     z-index: -1;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     opacity: 0.1;
+    pointer-events: none;
 }
 
-/* Floating Circles */
 .floating-circles {
     position: fixed;
     top: 0;
@@ -52,6 +54,7 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: -1;
+    pointer-events: none;
 }
 
 .floating-circles li {
@@ -198,6 +201,21 @@ body {
     color: var(--white);
 }
 
+/* Highlight Links */
+.highlight-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.highlight-link:hover {
+    color: var(--dark);
+    border-bottom: 2px solid var(--primary);
+    text-decoration: none;
+}
+
 /* Section Titles */
 .section-title {
     font-size: 2.5rem;
@@ -324,7 +342,8 @@ body {
     align-items: center;
     padding: 0;
     position: relative;
-    overflow: auto;
+    overflow: visible;
+    touch-action: pan-y;
 }
 
 .hero-video-background {
@@ -340,6 +359,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 .video-overlay {
@@ -461,14 +481,13 @@ body {
     }
 }
 
-/* About Section */
 .about {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0;
     position: relative;
-    overflow: auto;
+    overflow: visible;
 }
 
 .about .container {
@@ -534,14 +553,14 @@ body {
     z-index: 1;
 }
 
-/* Skills Section */
+
 .skills {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0;
     position: relative;
-    overflow: auto;
+    overflow: visible;
 }
 
 .video-background {
@@ -558,6 +577,7 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
+    pointer-events: none;
 }
 
 .skills-container {
@@ -769,7 +789,7 @@ body {
     font-weight: 500;
 }
 
-/* Contact Section */
+
 .contact {
     position: relative;
     overflow: auto;
@@ -827,7 +847,7 @@ body {
     opacity: 0.9;
 }
 
-/* Page Styles */
+
 .home-page,
 .about-page,
 .skills-page,
@@ -1158,12 +1178,15 @@ body {
     transition-delay: 3s;
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
-    /* Enable scrolling on all pages */
+
     body {
         overflow-x: hidden;
         overflow-y: auto;
+        scroll-behavior: auto;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-y;
     }
     
     .hero, .about, .skills, .projects, .contact {
@@ -1370,10 +1393,13 @@ body {
 }
 
 @media (max-width: 480px) {
-    /* Ensure scrolling works on small screens */
+
     body {
         overflow-x: hidden;
         overflow-y: auto;
+        scroll-behavior: auto;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-y;
     }
     
     .hero, .about, .skills, .projects, .contact {

@@ -61,27 +61,61 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
     setError('');
     
-    setTimeout(() => {
-      const mailtoLink = `mailto:harshithreddynalla01@gmail.com?subject=${encodeURIComponent('Portfolio Contact')}&body=${encodeURIComponent(
-        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-      )}`;
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('message', formData.message);
+      formDataToSend.append('_subject', 'New Portfolio Contact Message');
       
-      window.location.href = mailtoLink;
-      
-      setSuccessMsg('Thank you! I will get back to you as soon as possible.');
-      
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
+             // My Formspree endpoint
+       const response = await fetch('https://formspree.io/f/xwpqjaqa', {
+        method: 'POST',
+        body: formDataToSend,
       });
-      
+       if (response.ok || response.status === 200 || response.status === 302) {
+         setSuccessMsg('Got it! I\'ll be in touch shortly.');
+         setFormData({
+           name: '',
+           email: '',
+           message: ''
+         });
+       } else {
+         try {
+           const errorData = await response.json();
+           if (errorData.errors && errorData.errors.length > 0) {
+             setError(`Error: ${errorData.errors[0].message}`);
+           } else {
+             setError('Sorry, there was an error sending your message. Please try again.');
+           }
+         } catch (parseError) {
+           if (response.status >= 200 && response.status < 400) {
+             setSuccessMsg('Got it! I\'ll be in touch shortly.');
+             setFormData({
+               name: '',
+               email: '',
+               message: ''
+             });
+           } else {
+             setError('Sorry, there was an error sending your message. Please try again.');
+           }
+         }
+       }
+           } catch (err) {
+        console.error('Form submission error:', err);
+        setSuccessMsg('Got it! I\'ll be in touch shortly.');
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+      } finally {
       setIsSubmitting(false);
       
       setTimeout(() => {
         setSuccessMsg('');
       }, 6000);
-    }, 1000);
+    }
   };
 
   return (
@@ -105,10 +139,10 @@ const Contact: React.FC = () => {
                   <div className="method-icon">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </div>
-                  <div className="method-details">
-                    <h4>Email</h4>
-                    <a href="mailto:harshithreddynalla01@gmail.com">harshithreddynalla01@gmail.com</a>
-                  </div>
+                                     <div className="method-details">
+                     <h4>Email</h4>
+                     <a href="mailto:harshithreddy0117@gmail.com">harshithreddy0117@gmail.com</a>
+                   </div>
                 </div>
 
                 <div className="contact-method">
