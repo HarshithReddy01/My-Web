@@ -44,11 +44,11 @@ const Projects: React.FC = () => {
     {
       id: 5,
       title: "Weather Dashboard",
-      description: "Real-time weather application with 5-day forecast and location-based services.",
+      description: "A modern, responsive React-based weather forecasting application with real-time weather data, location services, nearby places, and YouTube content integration.",
       image: `${import.meta.env.BASE_URL}Images/Weather.png`,
-      liveLink: "https://harshithreddy01.github.io/PM-Accelerator--Test-1/",
-      githubLink: "https://github.com/HarshithReddy01/WeatherApplication",
-      tech: ["React", "API"]
+      liveLink: "https://harshithreddy01.github.io/PM-Accelerator--Test-2-Frontend-new/",
+      githubLink: "https://github.com/HarshithReddy01/PM-Accelerator--Test-2-Frontend-new",
+      tech: ["React", "JavaScript", "CSS", "API Integration"]
     }
   ];
 
