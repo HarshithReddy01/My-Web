@@ -26,7 +26,7 @@ export default defineConfig({
       },
     },
   },
-  base: '/',
+  base: '/My-Web/',
   define: {
     'process.env': {},
     global: 'globalThis',
