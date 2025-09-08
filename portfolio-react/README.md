@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This is a modern, responsive React app
 
 AI Engineer & Full-Stack Developer | Spring Boot & React
 
-I'm a BS Computer Science student at the University of South Dakota, specializing in Artificial Intelligence, and a research assistant under Dr. Debesh Jha, Visiting Professor at USD. I turn ideas into smart, powerful web apps that are easy and enjoyable to use. By blending AI models with strong backends and clean, responsive designs, I build products that solve real problems.
+I'm a BS Computer Science student at the University of South Dakota, specializing in Artificial Intelligence, and a research assistant under Dr. Debesh Jha, Assistant Professor at USD. I turn ideas into smart, powerful web apps that are easy and enjoyable to use. By blending AI models with strong backends and clean, responsive designs, I build products that solve real problems.
 
 ## Features
 
