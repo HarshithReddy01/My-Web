@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
       image: `${import.meta.env.BASE_URL}Images/PancreasImage.jpg`,
       liveLink: "https://debeshjha.github.io/PanInsight/",
       githubLink: "https://github.com/HarshithReddy01",
-      tech: ["Python", "Java-Spring Boot", "React"]
+      tech: ["Python", "React"]
     },
     {
       id: 2,
@@ -20,11 +20,20 @@ const Projects: React.FC = () => {
       description: "A web app that uses AI to analyze dental X-rays, detect issues, filter invalid inputs, and provide accurate results with confidence scores.",
       image: `${import.meta.env.BASE_URL}Images/Dental.jpg`,
       liveLink: "https://debeshjha.github.io/DentiMap/",
-      githubLink: "https://github.com/HarshithReddy01",
-      tech: ["Python", "Java-Spring Boot", "React"]
+      githubLink: "https://huggingface.co/spaces/HarshithReddy01/Dentimap",
+      tech: ["Python", "FastAPI", "React", "Hugging Face Space"]
     },
     {
       id: 3,
+      title: "LiverProfile AI",
+      description: "Advanced AI-Powered Liver Segmentation and Analysis - Automatic liver segmentation and morphological analysis from 3D MRI volumes using SRMA-Mamba architecture.",
+      image: `${import.meta.env.BASE_URL}Images/liver.png`,
+      liveLink: "https://harshithreddy01.github.io/frontend-SRMA-Liver/",
+      githubLink: "https://huggingface.co/spaces/HarshithReddy01/srmamamba-liver-segmentation",
+      tech: ["Python", "FastAPI", "React", "Hugging Face Space"]
+    },
+    {
+      id: 4,
       title: "UniVibe",
       description: "UniVibe is a campus social networking platform that connects students through events, chats, and real-time interactions.",
       image: `${import.meta.env.BASE_URL}Images/Ecommerce.png`,
@@ -33,7 +42,7 @@ const Projects: React.FC = () => {
       tech: ["React", "Tailwind", "TypeScript"]
     },
     {
-      id: 4,
+      id: 5,
       title: "TODO",
       description: "A simple TODO app to add, edit, delete, and track daily tasks with responsive design.",
       image: `${import.meta.env.BASE_URL}Images/Rest.png`,
@@ -42,7 +51,7 @@ const Projects: React.FC = () => {
       tech: ["React", "Tailwind"]
     },
     {
-      id: 5,
+      id: 6,
       title: "Weather Dashboard",
       description: "A modern, responsive React-based weather forecasting application with real-time weather data, location services, nearby places, and YouTube content integration.",
       image: `${import.meta.env.BASE_URL}Images/Weather.png`,

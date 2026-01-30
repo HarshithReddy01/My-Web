@@ -117,6 +117,46 @@ const Skills: React.FC = () => {
               </div>
             </div>
           </div>
+
+          <div className="skills-ai">
+            <h3>AI & Machine Learning</h3>
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>Machine Learning</span>
+                <span>85%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress ml"></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>Deep Learning</span>
+                <span>80%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress dl"></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>Computer Vision</span>
+                <span>85%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress cv"></div>
+              </div>
+            </div>
+            <div className="skill-item">
+              <div className="skill-info">
+                <span>TensorFlow/PyTorch</span>
+                <span>75%</span>
+              </div>
+              <div className="skill-bar">
+                <div className="skill-progress tf"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

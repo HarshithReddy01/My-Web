@@ -6,6 +6,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Publications from './components/Publications';
+import WorkExperience from './components/WorkExperience';
 import Contact from './components/Contact';
 import FloatingCircles from './components/FloatingCircles';
 
@@ -21,6 +23,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/work-experience" element={<WorkExperience />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

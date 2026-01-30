@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaLinkedin } from 'react-icons/fa';
+import { SiGooglescholar, SiHuggingface } from 'react-icons/si';
 
 const Hero: React.FC = () => {
   return (
@@ -23,6 +25,17 @@ const Hero: React.FC = () => {
             <a href="https://github.com/HarshithReddy01" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
               View My Work
             </a>
+            <div className="hero-social-icons">
+              <a href="https://www.linkedin.com/in/harshith-reddy-nalla-6005012ab/" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <FaLinkedin />
+              </a>
+              <a href="https://scholar.google.com/citations?user=d5DblMEAAAAJ&hl=en" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+                <SiGooglescholar />
+              </a>
+              <a href="https://huggingface.co/HarshithReddy01" className="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face">
+                <SiHuggingface />
+              </a>
+            </div>
           </div>
         </div>
         <div className="hero-image">

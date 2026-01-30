@@ -10,9 +10,9 @@ const About: React.FC = () => {
             <img src={`${import.meta.env.BASE_URL}Images/about.png`} alt="Harshith Reddy" className="about-img" />
           </div>
           <div className="about-text">
-            <h3>AI Engineer & Full-Stack Developer | Spring Boot & React</h3>
+            <h3>AI Engineer & Full-Stack Developer</h3>
             <p>
-              I'm a BS Computer Science student at the University of South Dakota, specializing in Artificial Intelligence, and a research assistant under <a href="https://www.linkedin.com/in/debesh-jha-ph-d-071462aa/" target="_blank" rel="noopener noreferrer" className="highlight-link">Dr. Debesh Jha</a>, Assistant Professor at USD. I turn ideas into smart, powerful web apps that are easy and enjoyable to use. By blending AI models with strong backends and clean, responsive designs, I build products that solve real problems.
+              I'm an undergraduate junior Computer Science student at the University of South Dakota, specializing in Artificial Intelligence, and a research assistant under <a href="https://www.linkedin.com/in/debesh-jha-ph-d-071462aa/" target="_blank" rel="noopener noreferrer" className="highlight-link"><span className="name-red">Dr. Debesh Jha</span> (Named among the world's top 2% of researchers in Medical Imaging by Stanford University)</a>, Assistant Professor at USD. I am currently working primarily on research papers and advanced AI-driven projects focused on real-world medical imaging applications.
             </p>
                          <a href={`${import.meta.env.BASE_URL}MyResume.pdf`} download className="btn btn-primary">Download Resume</a>
           </div>
