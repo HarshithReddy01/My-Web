@@ -725,16 +725,429 @@ body {
     background: var(--white);
 }
 
+/* Education Section */
+.education {
+    min-height: 100vh;
+    padding: 60px 0 50px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.education-card {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.education-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+.education-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: var(--white);
+    padding: 10px;
+}
+
+.education-overlay {
+    display: none;
+}
+
+.education-icon {
+    font-size: 3.5rem;
+    color: var(--white);
+    animation: pulse 2s infinite;
+}
+
+.education-content {
+    padding: 30px;
+}
+
+.education-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--light);
+}
+
+.education-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.education-institution {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gray);
+    margin: 0;
+}
+
+.education-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.education-meta .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.education-meta .meta-item svg {
+    color: #dc3545;
+    width: 16px;
+}
+
+.gpa-badge {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(220, 53, 69, 0.3);
+}
+
+.education-details {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: var(--light);
+    border-radius: 8px;
+    border-left: 3px solid #dc3545;
+}
+
+.education-details p {
+    margin: 8px 0;
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.education-details strong {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.education-description {
+    color: var(--dark-gray);
+    line-height: 1.8;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .education-image-container {
+        height: 180px;
+    }
+
+    .education-content {
+        padding: 20px;
+    }
+
+    .education-title {
+        font-size: 1.3rem;
+    }
+
+    .education-institution {
+        font-size: 1rem;
+    }
+}
+
 /* Work Experience Section */
 .work-experience {
     min-height: 100vh;
     padding: 60px 0 50px;
-    background: var(--white);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.work-experience::before {
+    display: none;
 }
 
 .work-experience-content {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.experience-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, #dc3545, #c82333);
+    transform: translateX(-50%);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50%;
+}
+
+.experience-item.right {
+    justify-content: flex-end;
+    padding-right: 0;
+    padding-left: 50%;
+}
+
+.experience-card {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.experience-image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+.experience-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.experience-overlay {
+    display: none;
+}
+
+.experience-icon {
+    font-size: 4rem;
+    color: var(--white);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.experience-content {
+    padding: 30px;
+}
+
+.experience-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--light);
+}
+
+.experience-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.experience-company {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gray);
+    margin: 0;
+}
+
+.experience-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.meta-item svg {
+    color: #dc3545;
+    width: 16px;
+}
+
+.duration-badge {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: var(--white);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: auto;
+    box-shadow: 0 2px 10px rgba(220, 53, 69, 0.3);
+}
+
+.experience-details {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: var(--light);
+    border-radius: 8px;
+    border-left: 3px solid #dc3545;
+}
+
+.experience-details p {
+    margin: 8px 0;
+    color: var(--dark-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.experience-details strong {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.experience-description {
+    color: var(--dark-gray);
+    line-height: 1.8;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.timeline-connector {
+    display: none;
+}
+
+.experience-item.left .timeline-connector {
+    display: none;
+}
+
+.experience-item.right .timeline-connector {
+    display: none;
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    border: 4px solid #dc3545;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    box-shadow: 0 0 20px rgba(220, 53, 69, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .experience-timeline::before {
+        display: none;
+    }
+
+    .experience-item,
+    .experience-item.right {
+        justify-content: flex-start;
+        padding-left: 80px;
+        padding-right: 0;
+    }
+
+    .timeline-connector {
+        display: none !important;
+    }
+
+    .timeline-dot {
+        left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        max-width: 100%;
+    }
+
+    .experience-image-container {
+        height: 200px;
+    }
+
+    .experience-content {
+        padding: 20px;
+    }
+
+    .experience-title {
+        font-size: 1.3rem;
+    }
+
+    .experience-company {
+        font-size: 1rem;
+    }
+
+    .experience-meta {
+        gap: 8px;
+    }
+
+    .meta-item {
+        font-size: 0.9rem;
+    }
 }
 
 .publications-list {

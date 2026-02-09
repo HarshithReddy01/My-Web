@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Publications from './components/Publications';
 import WorkExperience from './components/WorkExperience';
+import Education from './components/Education';
 import Contact from './components/Contact';
 import FloatingCircles from './components/FloatingCircles';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/work-experience" element={<WorkExperience />} />
+          <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

@@ -36,6 +36,7 @@ const Navbar: React.FC = () => {
           <li><Link to="/projects" onClick={closeMenu} className={location.pathname === '/projects' ? 'active' : ''}>Projects</Link></li>
           <li><Link to="/publications" onClick={closeMenu} className={location.pathname === '/publications' ? 'active' : ''}>Publications</Link></li>
           <li><Link to="/work-experience" onClick={closeMenu} className={location.pathname === '/work-experience' ? 'active' : ''}>Work Experience</Link></li>
+          <li><Link to="/education" onClick={closeMenu} className={location.pathname === '/education' ? 'active' : ''}>Education</Link></li>
           <li><Link to="/contact" onClick={closeMenu} className={location.pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
         </ul>
         <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
