@@ -9,12 +9,11 @@ const Education: React.FC = () => {
       title: "Bachelor's of Science in Computer Science",
       institution: "University of South Dakota",
       location: "On Campus",
-      period: "January 2023 - May 2027",
+      period: "August 2023 - May 2027",
       gpa: "3.6/4.0",
       concentration: "Artificial Intelligence",
       minor: "Mathematics",
       deansList: "Dean's List: 2023 Spring, Fall | 2024 Fall | 2025 Spring, Fall",
-      type: "education",
       image: `${import.meta.env.BASE_URL}Images/USD.png`,
       description: "",
       icon: faGraduationCap
@@ -25,7 +24,6 @@ const Education: React.FC = () => {
       institution: "Certificate",
       location: "",
       period: "",
-      type: "certificate",
       image: `${import.meta.env.BASE_URL}Images/java.png`,
       description: "Certificate in Data Structures and Algorithms using Java programming language.",
       icon: faAward

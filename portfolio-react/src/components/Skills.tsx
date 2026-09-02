@@ -1,34 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 const Skills: React.FC = () => {
-  const skillsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const skillBars = entry.target.querySelectorAll('.skill-progress');
-            skillBars.forEach((bar) => {
-              const element = bar as HTMLElement;       
-              void element.offsetHeight;
-            });
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (skillsRef.current) {
-      observer.observe(skillsRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section id="skills" className="skills" ref={skillsRef}>
+    <section id="skills" className="skills">
       <div className="video-background">
         <video autoPlay muted loop playsInline>
           <source src={`${import.meta.env.BASE_URL}Images/Aboutme.mp4`} type="video/mp4" />
