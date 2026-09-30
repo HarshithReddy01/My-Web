@@ -9,7 +9,7 @@ const Education: React.FC = () => {
       title: "Bachelor's of Science in Computer Science",
       institution: "University of South Dakota",
       location: "On Campus",
-      period: "August 2023 - May 2027",
+      period: "January2023 - May 2027",
       gpa: "3.6/4.0",
       concentration: "Artificial Intelligence",
       minor: "Mathematics",
