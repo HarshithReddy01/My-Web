@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       id: 1,
       title: "PanInsight",
       description: "PanInsight is an AI-powered medical web app that detects pancreatic cancer from medical scans, showing lesion overlays, confidence scores, and downloadable reports to support faster, more accurate diagnosis.",
-      image: `${import.meta.env.BASE_URL}Images/PancreasImage.jpg`,
+      image: `${import.meta.env.BASE_URL}Images/PancreasImage.webp`,
       liveLink: "https://debeshjha.github.io/PanInsight/",
       githubLink: "https://github.com/HarshithReddy01",
       tech: ["Python", "React"]
@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
       id: 2,
       title: "DentiMap",
       description: "A web app that uses AI to analyze dental X-rays, detect issues, filter invalid inputs, and provide accurate results with confidence scores.",
-      image: `${import.meta.env.BASE_URL}Images/Dental.jpg`,
+      image: `${import.meta.env.BASE_URL}Images/Dental.webp`,
       liveLink: "https://debeshjha.github.io/DentiMap/",
       githubLink: "https://huggingface.co/spaces/HarshithReddy01/Dentimap",
       tech: ["Python", "FastAPI", "React", "Hugging Face Space"]
@@ -27,7 +27,7 @@ const Projects: React.FC = () => {
       id: 3,
       title: "LiverProfile AI",
       description: "Advanced AI-Powered Liver Segmentation and Analysis - Automatic liver segmentation and morphological analysis from 3D MRI volumes using SRMA-Mamba architecture.",
-      image: `${import.meta.env.BASE_URL}Images/liver.png`,
+      image: `${import.meta.env.BASE_URL}Images/liver.webp`,
       liveLink: "https://harshithreddy01.github.io/frontend-SRMA-Liver/",
       githubLink: "https://huggingface.co/spaces/HarshithReddy01/srmamamba-liver-segmentation",
       tech: ["Python", "FastAPI", "React", "Hugging Face Space"]
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
       id: 4,
       title: "UniVibe",
       description: "UniVibe is a campus social networking platform that connects students through events, chats, and real-time interactions.",
-      image: `${import.meta.env.BASE_URL}Images/Ecommerce.png`,
+      image: `${import.meta.env.BASE_URL}Images/Ecommerce.webp`,
       liveLink: "https://v0-un-i-redsid5s-projects.vercel.app/",
       githubLink: "https://github.com/HarshithReddy01/univibe-code-only",
       tech: ["React", "Tailwind", "TypeScript"]
@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
       id: 5,
       title: "TODO",
       description: "A simple TODO app to add, edit, delete, and track daily tasks with responsive design.",
-      image: `${import.meta.env.BASE_URL}Images/Rest.png`,
+      image: `${import.meta.env.BASE_URL}Images/Rest.webp`,
       liveLink: "https://usdynamicwebapp.ccbp.tech/",
       githubLink: "https://github.com/HarshithReddy01",
       tech: ["React", "Tailwind"]
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
       id: 6,
       title: "Weather Dashboard",
       description: "A modern, responsive React-based weather forecasting application with real-time weather data, location services, nearby places, and YouTube content integration.",
-      image: `${import.meta.env.BASE_URL}Images/Weather.png`,
+      image: `${import.meta.env.BASE_URL}Images/Weather.webp`,
       liveLink: "https://harshithreddy01.github.io/PM-Accelerator--Test-2-Frontend-new/",
       githubLink: "https://github.com/HarshithReddy01/PM-Accelerator--Test-2-Frontend-new",
       tech: ["React", "JavaScript", "CSS", "API Integration"]
@@ -69,7 +69,7 @@ const Projects: React.FC = () => {
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <div className="project-img">
-                <img src={project.image} alt={project.title} />
+                <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
                 <div className="project-links">
                   <a href={project.liveLink} className="project-link" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faLink} />

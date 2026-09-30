@@ -7,7 +7,7 @@ const About: React.FC = () => {
         <h2 className="section-title">About <span>Me</span></h2>
         <div className="about-content">
           <div className="about-image">
-            <img src={`${import.meta.env.BASE_URL}Images/about image.webp`} alt="Hand using a stylus on a laptop, overlaid with glowing AI and neural-network graphics" className="about-img" />
+            <img src={`${import.meta.env.BASE_URL}Images/about image.webp`} alt="Hand using a stylus on a laptop, overlaid with glowing AI and neural-network graphics" className="about-img" loading="lazy" decoding="async" />
           </div>
           <div className="about-text">
             <h3>AI Engineer & Full-Stack Developer</h3>

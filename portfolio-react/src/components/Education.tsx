@@ -14,7 +14,7 @@ const Education: React.FC = () => {
       concentration: "Artificial Intelligence",
       minor: "Mathematics",
       deansList: "Dean's List: 2023 Spring, Fall | 2024 Fall | 2025 Spring, Fall",
-      image: `${import.meta.env.BASE_URL}Images/USD.png`,
+      image: `${import.meta.env.BASE_URL}Images/USD.webp`,
       description: "",
       icon: faGraduationCap
     },
@@ -24,7 +24,7 @@ const Education: React.FC = () => {
       institution: "Certificate",
       location: "",
       period: "",
-      image: `${import.meta.env.BASE_URL}Images/java.png`,
+      image: `${import.meta.env.BASE_URL}Images/java.webp`,
       description: "Certificate in Data Structures and Algorithms using Java programming language.",
       icon: faAward
     },
@@ -38,7 +38,7 @@ const Education: React.FC = () => {
           {educationItems.map((item, index) => (
             <div key={item.id} className="education-card">
               <div className="education-image-container">
-                <img src={item.image} alt={item.institution} className="education-image" />
+                <img src={item.image} alt={item.institution} className="education-image" loading="lazy" decoding="async" />
                 <div className="education-overlay">
                   <FontAwesomeIcon icon={item.icon} className="education-icon" />
                 </div>

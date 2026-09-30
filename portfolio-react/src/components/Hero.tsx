@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="hero-image">
           <div className="image-wrapper">
-            <img src={`${import.meta.env.BASE_URL}Images/Website.png`} alt="Harshith Reddy" className="profile-img" />
+            <img src={`${import.meta.env.BASE_URL}Images/Website.webp`} alt="Harshith Reddy" className="profile-img" />
           </div>
         </div>
       </div>

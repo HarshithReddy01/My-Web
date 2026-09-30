@@ -26,7 +26,7 @@ const WorkExperience: React.FC = () => {
       duration: "4 months",
       period: "May 2026 - August 2026",
       employmentType: "Internship",
-      image: `${import.meta.env.BASE_URL}Images/sterling trustees.png`,
+      image: `${import.meta.env.BASE_URL}Images/sterling trustees.webp`,
       description: "Built an agentic RAG knowledge assistant that answers staff questions over legal documents in Box and live Salesforce data, with citations, and designed its end-to-end architecture. Crawled and audited 992 legal entity folders (approx. 390K PDFs) to produce a structured manifest and an ingestion governance plan, and built a Python service that extracts account numbers and dates from custodial statement PDFs and auto-files them into the correct Box folders via the Box API, replacing a manual filing process. Scoped Salesforce automations to replace manual data entry, including a Box AI metadata extraction to Salesforce sync pipeline.",
       icon: faBriefcase
     },
@@ -38,7 +38,7 @@ const WorkExperience: React.FC = () => {
       duration: "1 year",
       period: "June 2025 - May 2026",
       employmentType: "Part Time",
-      image: `${import.meta.env.BASE_URL}Images/research.png`,
+      image: `${import.meta.env.BASE_URL}Images/research.webp`,
       description: "Worked under Dr. Debesh Jha training 3D medical image segmentation models for liver tumor and colorectal polyp detection using PyTorch CNNs, Vision Transformers, and Mamba (SSM) architectures. Ran systematic ablation studies across all three architecture families, evaluating Dice, IoU, sensitivity, and specificity - findings that contributed to a peer-reviewed publication at an AAAI 2026 workshop - and packaged the models into FastAPI and Docker microservices deployed on Hugging Face Spaces for real-time inference.",
       icon: faBriefcase
     },
@@ -50,7 +50,7 @@ const WorkExperience: React.FC = () => {
       duration: "8 months",
       period: "January 2026 - Present",
       employmentType: "Part Time",
-      image: `${import.meta.env.BASE_URL}Images/scholar.png`,
+      image: `${import.meta.env.BASE_URL}Images/scholar.webp`,
       description: "As a Student Ambassador at the University of South Dakota, I represent the university by assisting with campus tours, admissions events, and student outreach while mentoring prospective and new students and promoting a positive campus experience.",
       icon: faGraduationCap
     },
@@ -62,7 +62,7 @@ const WorkExperience: React.FC = () => {
       duration: "2 months",
       period: "October 2025 - November 2025",
       employmentType: "Part Time",
-      image: `${import.meta.env.BASE_URL}Images/nsf.png`,
+      image: `${import.meta.env.BASE_URL}Images/nsf.webp`,
       description: "DentiMap AI — Entrepreneurial Lead | University of South Dakota | NSF I-Corps Program. Worked with Dr. Debesh Jha and team to develop an AI-based tool for detecting dental diseases. I led customer discovery for the venture, conducting 20+ structured interviews with dentists and clinic owners to validate product-market fit and explore how AI can make dental diagnostics faster and more accurate.",
       icon: faBuilding
     },
@@ -74,7 +74,7 @@ const WorkExperience: React.FC = () => {
       duration: "1 year",
       period: "January 2024 - December 2024",
       employmentType: "Part Time",
-      image: `${import.meta.env.BASE_URL}Images/sga.png`,
+      image: `${import.meta.env.BASE_URL}Images/sga.webp`,
       description: "Student leader who represents peers and advocates for student issues by participating in Student Government Association discussions, policy decisions, and campus initiatives, while also serving as Secretary for the SGA Finance Department, assisting with budget review, documentation, and allocation of funds for both small and large student organizations.",
       icon: faGraduationCap
     },
@@ -86,7 +86,7 @@ const WorkExperience: React.FC = () => {
       duration: "1 year 5 months",
       period: "August 2023 - December 2024",
       employmentType: "Part Time",
-      image: `${import.meta.env.BASE_URL}Images/Bros.png`,
+      image: `${import.meta.env.BASE_URL}Images/Bros.webp`,
       description: "A Student Supervisor at Einstein Bros. Bagels (operated by Sodexo at the University of South Dakota) supports daily dining operations while leading student employees. The role combines customer service, team supervision, and operational oversight, ensuring food quality, safety, and a positive experience for students, staff, and visitors.",
       icon: faBriefcase
     },
@@ -98,7 +98,7 @@ const WorkExperience: React.FC = () => {
       duration: "Summer 2023, 2024, 2025",
       period: "Summer 2023, 2024, 2025",
       employmentType: "Full Time",
-      image: `${import.meta.env.BASE_URL}Images/facilities.png`,
+      image: `${import.meta.env.BASE_URL}Images/facilities.webp`,
       description: "Responsible for cleaning and disinfecting dormitory rooms and common areas, vacuuming and mopping floors, sanitizing high-touch surfaces, and safely lifting and moving heavy objects. Ensured a clean, hygienic, and safe living environment for residents.",
       icon: faBuilding
     }
@@ -115,7 +115,7 @@ const WorkExperience: React.FC = () => {
               <div className="timeline-dot"></div>
               <div className="experience-card">
                 <div className="experience-image-container">
-                  <img src={exp.image} alt={exp.company} className="experience-image" />
+                  <img src={exp.image} alt={exp.company} className="experience-image" loading="lazy" decoding="async" />
                   <div className="experience-overlay">
                     <FontAwesomeIcon icon={exp.icon} className="experience-icon" />
                   </div>
