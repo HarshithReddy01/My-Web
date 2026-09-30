@@ -24,10 +24,10 @@ const WorkExperience: React.FC = () => {
       company: "Sterling Trustees LLC",
       location: "Sioux Falls, SD",
       duration: "4 months",
-      period: "May 2026 - Present",
+      period: "May 2026 - August 2026",
       employmentType: "Internship",
       image: `${import.meta.env.BASE_URL}Images/sterling trustees.png`,
-      description: "Building an agentic RAG knowledge assistant that answers staff questions over legal documents in Box and live Salesforce data, with citations, and designed its end-to-end architecture. Crawled and audited 992 legal entity folders (approx. 390K PDFs) to produce a structured manifest and an ingestion governance plan, and built a Python service that extracts account numbers and dates from custodial statement PDFs and auto-files them into the correct Box folders via the Box API, replacing a manual filing process. Scoped Salesforce automations to replace manual data entry, including a Box AI metadata extraction to Salesforce sync pipeline.",
+      description: "Built an agentic RAG knowledge assistant that answers staff questions over legal documents in Box and live Salesforce data, with citations, and designed its end-to-end architecture. Crawled and audited 992 legal entity folders (approx. 390K PDFs) to produce a structured manifest and an ingestion governance plan, and built a Python service that extracts account numbers and dates from custodial statement PDFs and auto-files them into the correct Box folders via the Box API, replacing a manual filing process. Scoped Salesforce automations to replace manual data entry, including a Box AI metadata extraction to Salesforce sync pipeline.",
       icon: faBriefcase
     },
     {
