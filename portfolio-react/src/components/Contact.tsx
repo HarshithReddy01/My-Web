@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarkerAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -174,9 +174,6 @@ const Contact: React.FC = () => {
                   </a>
                   <a href="https://www.linkedin.com/in/harshith-reddy-nalla-6005012ab/" target="_blank" rel="noopener noreferrer" className="social-link">
                     <FontAwesomeIcon icon={faLinkedin} />
-                  </a>
-                  <a href="https://www.instagram.com/harshithreddy01?igsh=MW90emJxZXg5bXoxYw==" target="_blank" rel="noopener noreferrer" className="social-link">
-                    <FontAwesomeIcon icon={faInstagram} />
                   </a>
                 </div>
               </div>
